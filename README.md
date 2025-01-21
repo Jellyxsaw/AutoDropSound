@@ -29,6 +29,9 @@ pip install requests
 ---
 
 ## 🎯 使用方法
+
+首先 先開啟你的TTS伺服器
+
 ### 1️⃣ 下載專案並運行腳本
 ```sh
 git clone https://github.com/Jellyxsaw/AutoDropSound
