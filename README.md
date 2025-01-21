@@ -1,7 +1,10 @@
 # 批量調用本地 TTS API
 
 ## 🔥 項目簡介
-本項目提供了一個 **Python 腳本**，用於 **批量調用本地 TTS API**，自動生成語音檔案。
+本項目提供了一個 **Python 腳本** autoCall.py，用於 **批量調用本地 TTS API**，自動生成POE2的掉落音效。
+
+另外提供兩個可以放大音量的腳本 需要自行安裝 FFmpeg 才能使用
+
 請先下載對應的模型
 
 🎨 **前端介面**：[Bilibili 影片](https://www.bilibili.com/video/BV1D7421R7Rn/?spm_id_from=333.337.search-card.all.click&vd_source=b3083797db67cf642597cac1c809cbc0)
