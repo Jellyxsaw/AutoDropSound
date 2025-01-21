@@ -4,8 +4,9 @@ from pydub import AudioSegment
 from pydub.utils import which
 
 # 設定資料夾
-input_folder = r"C:\Users\Jelly\Downloads\test\一键包(不含模型)\miHoYo-Inference\output\崩铁流萤"  # Windows
-output_folder = r"C:\Users\Jelly\Downloads\test\一键包(不含模型)\miHoYo-Inference\output\崩铁流萤_放大"  # Windows
+input_folder = r"ur folder path"  # Windows
+output_folder = r"ur output folder path"  # Windows
+volume_gain_db = 15  # 自行調整音量
 
 # 確保輸出資料夾存在
 os.makedirs(output_folder, exist_ok=True)
@@ -15,7 +16,7 @@ AudioSegment.converter = which("ffmpeg")
 if not AudioSegment.converter:
     raise Exception("找不到 FFmpeg，請確認已安裝並加入環境變數！")
 
-volume_gain_db = 15
+
 
 # 處理所有 mp3 檔案
 for filename in os.listdir(input_folder):

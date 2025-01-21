@@ -3,8 +3,13 @@ import subprocess
 from pydub import AudioSegment
 from pydub.utils import which
 
+# 🚀 執行音量增強
+input_mp3 = r"ur file path"
+output_mp3 = os.path.splitext(input_mp3)[0] + "_loud.mp3"  # 加上 `_loud` 後綴
+volume_gain_db = 15 # 自行調整音量
 
-def amplify_mp3(input_path, output_path, volume_gain_db=15):
+
+def amplify_mp3(input_path, output_path, volume_gain_db=volume_gain_db):
     """
     放大 MP3 檔案音量，若 MP3 有問題則嘗試修復。
     :param input_path: 原始 MP3 檔案路徑
@@ -58,9 +63,5 @@ def amplify_mp3(input_path, output_path, volume_gain_db=15):
     if os.path.exists(temp_fixed_wav):
         os.remove(temp_fixed_wav)
 
-
-# 🚀 執行音量增強
-input_mp3 = r"C:\Users\Jelly\Downloads\test\一键包(不含模型)\miHoYo-Inference\output\崩铁流萤\寶石匠的稜鏡.wav"
-output_mp3 = os.path.splitext(input_mp3)[0] + "_loud.mp3"  # 加上 `_loud` 後綴
 
 amplify_mp3(input_mp3, output_mp3)
