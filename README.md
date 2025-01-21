@@ -2,6 +2,7 @@
 
 ## 🔥 項目簡介
 本項目提供了一個 **Python 腳本**，用於 **批量調用本地 TTS API**，自動生成語音檔案。
+請先下載對應的模型
 
 🎨 **前端介面**：[Bilibili 影片](https://www.bilibili.com/video/BV1D7421R7Rn/?spm_id_from=333.337.search-card.all.click&vd_source=b3083797db67cf642597cac1c809cbc0)
 🗣 **TTS 訓練模型**：[GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)
@@ -27,8 +28,8 @@ pip install requests
 ## 🎯 使用方法
 ### 1️⃣ 下載專案並運行腳本
 ```sh
-git clone https://github.com/你的帳號/你的倉庫.git
-cd 你的倉庫
+git clone https://github.com/Jellyxsaw/AutoDropSound
+cd ur stash
 python call_api.py
 ```
 
